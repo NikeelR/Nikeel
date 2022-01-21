@@ -1,5 +1,21 @@
 body {
-  font-family: "Poppins", sans-serif;
+  /* Nikeel Kumar R KR */
+
+
+position: absolute;
+left: 2.71%;
+right: 71.46%;
+top: 19.83%;
+bottom: 9.48%;
+
+font-family: Allura;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 62px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
   margin: 0;
 }
 
