@@ -1,0 +1,59 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+
+import { registerBlockCollection, registerBlockType } from '@wordpress/blocks';
+import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { useState, RawHTML, Fragment } from '@wordpress/element';
+import Placeholder from '../../src/Placeholder';
+import WidgetEditor from '../../src/WidgetEditor';
+import { inject, load, build } from '../../src/inject';
+import json from '../block.json';
+
+const { name } = json;
+const pxCodeConfig = '6234357fc9e11200133195a3/62343597ab2b260013afdb63/Nike';
+
+const edit = ({ clientId, attributes: { content }, setAttributes }) => {
+  const { plugInUrl } = nikeInject;
+  inject();
+
+  if (!content) {
+    load(pxCodeConfig, (content) => setAttributes({ content }));
+  }
+
+  const blockProps = useBlockProps();
+  const [lock, setLock] = useState(false);
+  const [highlight, setHighlight] = useState(false);
+  const { code, count } = build(content, { edit: true, clientId, highlight, InnerBlocks, Fragment, Placeholder, plugInUrl });
+
+  return (
+    <div {...blockProps} onMouseEnter={() => setHighlight(true)} onMouseLeave={() => setHighlight(false)} tabIndex={lock ? 1 : null}>
+      <WidgetEditor
+        name={'Nike'}
+        totalChildBlockCount={count}
+        highlight={highlight}
+        lock={lock}
+        onLock={(e) => setLock(e)}
+        syncing={!content}
+        onSync={() => {
+          setAttributes({ content: null });
+          load(pxCodeConfig, (content) => setAttributes({ content }));
+        }}
+      />
+      {code}
+    </div>
+  );
+};
+
+const save = ({ attributes: { content } }) => {
+  const { plugInUrl } = nikeInject;
+  const blockProps = useBlockProps.save();
+  const children = Placeholder.getChildren(InnerBlocks.Content());
+  const { code } = build(content, { edit: false, Fragment, children, RawHTML, plugInUrl });
+
+  return <div {...blockProps}>{code}</div>;
+};
+
+registerBlockCollection('pxcode-gutenberg', { title: 'pxcode' });
+registerBlockType(name, {
+  edit,
+  save
+});
