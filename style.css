@@ -1,230 +1,538 @@
-body {
-  / "Nikeel Kumar RKR" /
 
-
-position: absolute;
-left: 2.71%;
-right: 71.46%;
-top: 19.83%;
-bottom: 9.48%;
-
-font-family: Allura;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 62px;
-display: flex;
-align-items: center;
-text-decoration-line: underline;
-  margin: 0;
-}
-
-section {
-  background-color: white;
-}
-
-.hero {
-  background-color: #1c1d25;
-  height: 100vh;
-  color: white;
-  font-size: 40px;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 80px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  width: 800px;
-  justify-content: space-around;
-  font-size: 30px;
-}
-
-li {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 90px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 50px;
-}
-
-p {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 300;
-}
-
-.subtext {
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.hero-area {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero-text {
-  margin-left: 80px;
-  margin-bottom: 200px;
-}
-
-.button {
-  width: 200px;
-  height: 55px;
-  border-radius: 30px;
-  background-color: coral;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 300;
-  padding-top: 5px;
-  margin-top: 20px;
-}
-
-.button:hover {
-  background-color: #ef744b;
-}
-
-.button:active {
-  background-color: #a9a9a9;
-  color: #808080;
-}
-
-.socials {
-  padding-bottom: 200px;
-}
-
-.logo {
-  height: 80px;
-  margin: 30px;
-}
-.social {
-  margin: 20px;
-}
-
-.sub-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 80px;
-}
-
-.sub-section-alternative {
+.nike-block {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 80px;
-}
+  background-color: white; }
 
-.headshot {
-  width: 300px;
-  border-radius: 150px;
-  margin-left: 80px;
-}
+.nike-block.layout {
+  position: relative;
+  min-height: 1024px;
+  flex-shrink: 0; }
 
-.headshot-container {
+.nike-flex {
+  display: flex;
+  flex-direction: column; }
+
+.nike-flex.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 53px 0px; }
+  @media (max-width: 1199px) {
+    .nike-flex.layout {
+      margin: 45px 0px; } }
+  @media (max-width: 991px) {
+    .nike-flex.layout {
+      margin: 37px 0px; } }
+  @media (max-width: 767px) {
+    .nike-flex.layout {
+      margin: 30px 0px; } }
+  @media (max-width: 575px) {
+    .nike-flex.layout {
+      margin: 26px 0px; } }
+  @media (max-width: 479px) {
+    .nike-flex.layout {
+      margin: 22px 0px; } }
+  @media (max-width: 383px) {
+    .nike-flex.layout {
+      margin: 20px 0px; } }
+
+.nike-hero-title1 {
   display: flex;
   align-items: center;
-}
+  font: 50px/1.2 "Allura", Helvetica, Arial, serif;
+  color: #030025;
+  text-decoration: underline;
+  letter-spacing: 0px; }
+  @media (max-width: 1199px) {
+    .nike-hero-title1 {
+      font-size: 44px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .nike-hero-title1 {
+      font-size: 38px; } }
+  @media (max-width: 767px) {
+    .nike-hero-title1 {
+      font-size: 33px; } }
+  @media (max-width: 575px) {
+    .nike-hero-title1 {
+      font-size: 30px; } }
+  @media (max-width: 479px) {
+    .nike-hero-title1 {
+      font-size: 28px; } }
+  @media (max-width: 383px) {
+    .nike-hero-title1 {
+      font-size: 26px; } }
 
-.project-card {
-  width: 300px;
-  height: 500px;
-  box-shadow: 5px 5px 20px rgb(197, 195, 195);
-  margin: 10px;
-}
+.nike-hero-title1.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 25.83%;
+  margin: 0px auto; }
+  @media (max-width: 479px) {
+    .nike-hero-title1.layout {
+      width: 31.71%; } }
+  @media (max-width: 383px) {
+    .nike-hero-title1.layout {
+      width: 38.23%; } }
 
-.project-container {
+.nike-cover-block {
   display: flex;
-  justify-content: space-around;
-}
-table {
-  width: 100%;
-  font-size: 20px;
-}
+  flex-direction: column;
+  background: var(--src) center center/contain no-repeat; }
 
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+.nike-cover-block.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 42px 3px 358px 0px; }
+  @media (max-width: 1199px) {
+    .nike-cover-block.layout {
+      margin: 36px 5px 277px 0px; } }
+  @media (max-width: 991px) {
+    .nike-cover-block.layout {
+      margin: 30px 5px 190px 0px; } }
+  @media (max-width: 767px) {
+    .nike-cover-block.layout {
+      margin: 24px 5px 115px 0px; } }
+  @media (max-width: 575px) {
+    .nike-cover-block.layout {
+      margin: 22px 5px 77px 0px; } }
+  @media (max-width: 479px) {
+    .nike-cover-block.layout {
+      margin: 19px 5px 40px 0px; } }
+  @media (max-width: 383px) {
+    .nike-cover-block.layout {
+      margin: 17px 5px 14px 0px; } }
 
-.project-image {
-  margin-top: 25px;
-  width: 250px;
-  border-radius: 10px;
-}
+.nike-flex1 {
+  display: flex;
+  flex-direction: column; }
 
-hr {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+.nike-flex1.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 15px 18px; }
+  @media (max-width: 1199px) {
+    .nike-flex1.layout {
+      margin: 13px 16px; } }
+  @media (max-width: 991px) {
+    .nike-flex1.layout {
+      margin: 11px 13px; } }
+  @media (max-width: 767px) {
+    .nike-flex1.layout {
+      margin: 9px 11px; } }
+  @media (max-width: 575px) {
+    .nike-flex1.layout {
+      margin: 9px 10px; } }
+  @media (max-width: 479px) {
+    .nike-flex1.layout {
+      margin: 8px 9px; } }
+  @media (max-width: 383px) {
+    .nike-flex1.layout {
+      margin: 7px 9px; } }
 
-.project-link {
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-}
+@media (max-width: 1199px) {
+  .nike-hero-title-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
 
-a {
-  text-decoration: none;
+@media (max-width: 991px) {
+  .nike-hero-title-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 767px) {
+  .nike-hero-title-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 575px) {
+  .nike-hero-title-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 479px) {
+  .nike-hero-title-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 383px) {
+  .nike-hero-title-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+.nike-hero-title-box.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 33px 20px 0px; }
+  @media (max-width: 1199px) {
+    .nike-hero-title-box.layout {
+      margin: 29px 18px 0px; } }
+  @media (max-width: 991px) {
+    .nike-hero-title-box.layout {
+      margin: 24px 15px 0px; } }
+  @media (max-width: 767px) {
+    .nike-hero-title-box.layout {
+      margin: 20px 13px 0px; } }
+  @media (max-width: 575px) {
+    .nike-hero-title-box.layout {
+      margin: 18px 11px 0px; } }
+  @media (max-width: 479px) {
+    .nike-hero-title-box.layout {
+      margin: 16px 10px 0px; } }
+  @media (max-width: 383px) {
+    .nike-hero-title-box.layout {
+      margin: 15px 10px 0px; } }
+
+.nike-hero-title {
+  overflow: visible;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
+  font: 700 55px/1.2 "Sarala", Helvetica, Arial, serif;
+  color: #fff000;
+  letter-spacing: 2.75px;
+  white-space: pre-wrap; }
+  @media (max-width: 1199px) {
+    .nike-hero-title {
+      font-size: 49px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .nike-hero-title {
+      font-size: 42px; } }
+  @media (max-width: 767px) {
+    .nike-hero-title {
+      font-size: 36px; } }
+  @media (max-width: 575px) {
+    .nike-hero-title {
+      font-size: 33px; } }
+  @media (max-width: 479px) {
+    .nike-hero-title {
+      font-size: 30px; } }
+  @media (max-width: 383px) {
+    .nike-hero-title {
+      font-size: 28px; } }
+
+.nike-big-title {
+  font: 700 30px/1.2 "Sarala", Helvetica, Arial, serif;
   color: white;
-}
+  letter-spacing: 1.5px; }
+  @media (max-width: 1199px) {
+    .nike-big-title {
+      font-size: 27px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .nike-big-title {
+      font-size: 24px; } }
+  @media (max-width: 767px) {
+    .nike-big-title {
+      font-size: 21px; } }
+  @media (max-width: 575px) {
+    .nike-big-title {
+      font-size: 20px; } }
+  @media (max-width: 479px) {
+    .nike-big-title {
+      font-size: 18px; } }
+  @media (max-width: 383px) {
+    .nike-big-title {
+      font-size: 17px; } }
 
-.hamburger {
-  display: none;
-}
+.nike-big-title.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 38px 20px 0px; }
+  @media (max-width: 1199px) {
+    .nike-big-title.layout {
+      margin: 33px 18px 0px; } }
+  @media (max-width: 991px) {
+    .nike-big-title.layout {
+      margin: 27px 15px 0px; } }
+  @media (max-width: 767px) {
+    .nike-big-title.layout {
+      margin: 23px 13px 0px; } }
+  @media (max-width: 575px) {
+    .nike-big-title.layout {
+      margin: 20px 11px 0px; } }
+  @media (max-width: 479px) {
+    .nike-big-title.layout {
+      margin: 18px 10px 0px; } }
+  @media (max-width: 383px) {
+    .nike-big-title.layout {
+      margin: 16px 10px 0px; } }
 
-.hamburger:focus {
-  outline: 0;
-}
+.nike-medium-title {
+  font: 700 24px/1.2 "Sarala", Helvetica, Arial, serif;
+  color: white;
+  letter-spacing: 1.2px; }
+  @media (max-width: 1199px) {
+    .nike-medium-title {
+      font-size: 22px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .nike-medium-title {
+      font-size: 20px; } }
+  @media (max-width: 767px) {
+    .nike-medium-title {
+      font-size: 19px; } }
+  @media (max-width: 575px) {
+    .nike-medium-title {
+      font-size: 18px; } }
+  @media (max-width: 479px) {
+    .nike-medium-title {
+      font-size: 17px; } }
+  @media (max-width: 383px) {
+    .nike-medium-title {
+      font-size: 16px; } }
 
-@media only screen and (max-width: 1000px) {
-  .hamburger {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    margin: 20px;
-    align-self: flex-end;
-  }
+.nike-medium-title.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 12px 21px 0px; }
+  @media (max-width: 1199px) {
+    .nike-medium-title.layout {
+      margin: 11px 18px 0px; } }
+  @media (max-width: 991px) {
+    .nike-medium-title.layout {
+      margin: 9px 16px 0px; } }
+  @media (max-width: 767px) {
+    .nike-medium-title.layout {
+      margin: 8px 13px 0px; } }
+  @media (max-width: 575px) {
+    .nike-medium-title.layout {
+      margin: 7px 12px 0px; } }
+  @media (max-width: 479px) {
+    .nike-medium-title.layout {
+      margin: 6px 11px 0px; } }
+  @media (max-width: 383px) {
+    .nike-medium-title.layout {
+      margin: 6px 10px 0px; } }
 
-  ul {
-    display: none;
-    background-color: #2b2c38;
-    margin: 0ppx;
-  }
+@media (max-width: 1199px) {
+  .nike-highlights-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
 
-  ul.show {
-    display: block;
-  }
+@media (max-width: 991px) {
+  .nike-highlights-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
 
-  nav {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: #2b2c38;
-  }
+@media (max-width: 767px) {
+  .nike-highlights-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
 
-  .logo {
-    display: none;
-  }
-}
+@media (max-width: 479px) {
+  .nike-highlights-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
 
+.nike-highlights-box.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 39.54%;
+  margin: 43px 58.96% 0px 1.5%; }
+  @media (max-width: 1199px) {
+    .nike-highlights-box.layout {
+      margin: 37px 58.96% 0px 1.5%; } }
+  @media (max-width: 991px) {
+    .nike-highlights-box.layout {
+      margin: 30px 58.96% 0px 1.5%; } }
+  @media (max-width: 767px) {
+    .nike-highlights-box.layout {
+      margin: 25px 58.96% 0px 1.5%; } }
+  @media (max-width: 575px) {
+    .nike-highlights-box.layout {
+      margin: 22px 58.96% 0px 1.5%; } }
+  @media (max-width: 479px) {
+    .nike-highlights-box.layout {
+      margin: 19px 58.96% 0px 1.5%; } }
+  @media (max-width: 383px) {
+    .nike-highlights-box.layout {
+      margin: 17px 58.96% 0px 1.5%; } }
+
+.nike-highlights {
+  overflow: visible;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
+  font: 700 19px/1.2 "Sarala", Helvetica, Arial, serif;
+  color: white;
+  letter-spacing: 0.95px;
+  white-space: pre-wrap; }
+  @media (max-width: 1199px) {
+    .nike-highlights {
+      font-size: 18px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .nike-highlights {
+      font-size: 17px; } }
+  @media (max-width: 767px) {
+    .nike-highlights {
+      font-size: 16px; } }
+  @media (max-width: 479px) {
+    .nike-highlights {
+      font-size: 15px; } }
+
+.nike-flex2 {
+  display: flex; }
+
+.nike-flex2.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 26px 0px 0px; }
+  @media (max-width: 1199px) {
+    .nike-flex2.layout {
+      margin: 23px 0px 0px; } }
+  @media (max-width: 991px) {
+    .nike-flex2.layout {
+      margin: 19px 0px 0px; } }
+  @media (max-width: 767px) {
+    .nike-flex2.layout {
+      margin: 16px 0px 0px; } }
+  @media (max-width: 575px) {
+    .nike-flex2.layout {
+      margin: 15px 0px 0px; } }
+  @media (max-width: 479px) {
+    .nike-flex2.layout {
+      margin: 13px 0px 0px; } }
+  @media (max-width: 383px) {
+    .nike-flex2.layout {
+      margin: 12px 0px 0px; } }
+
+.nike-flex2-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 31px; }
+
+.nike-image {
+  background: var(--src) center center/contain no-repeat; }
+
+.nike-image.layout {
+  position: relative;
+  height: 21px;
+  width: 31px;
+  min-width: 31px;
+  margin: 6px 0px 4px; }
+  @media (max-width: 1199px) {
+    .nike-image.layout {
+      margin: 5px 0px; } }
+
+.nike-flex2-spacer {
+  flex: 0 1 8px; }
+
+.nike-subtitle {
+  font: 700 20px/1.2 "PT Serif", Helvetica, Arial, serif;
+  color: #fff000;
+  letter-spacing: 3.8px; }
+  @media (max-width: 1199px) {
+    .nike-subtitle {
+      font-size: 19px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .nike-subtitle {
+      font-size: 18px; } }
+  @media (max-width: 767px) {
+    .nike-subtitle {
+      font-size: 17px; } }
+  @media (max-width: 479px) {
+    .nike-subtitle {
+      font-size: 16px; } }
+
+.nike-subtitle.layout {
+  position: relative;
+  flex: 0 0 auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 5px 0px 2px; }
+  @media (max-width: 1199px) {
+    .nike-subtitle.layout {
+      margin: 5px 0px; } }
+
+.nike-flex2-spacer1 {
+  flex: 0 1 25px; }
+
+.nike-flex2-item1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 30px; }
+
+.nike-icon {
+  background: var(--src) center center/contain no-repeat; }
+
+.nike-icon.layout {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  margin: 1px 0px 0px; }
+  @media (max-width: 1199px) {
+    .nike-icon.layout {
+      margin: 5px 0px 0px; } }
+
+.nike-flex2-spacer2 {
+  flex: 0 1 25px; }
+
+.nike-flex2-item2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 30px; }
+
+.nike-icon.layout1 {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  margin: 0px 0px 1px; }
+  @media (max-width: 1199px) {
+    .nike-icon.layout1 {
+      margin: 0px 0px 5px; } }
+
+.nike-flex2-spacer3 {
+  flex: 0 1 6px; }
+
+.nike-subtitle.layout1 {
+  position: relative;
+  flex: 0 0 auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 3px 0px 4px; }
+  @media (max-width: 1199px) {
+    .nike-subtitle.layout1 {
+      margin: 5px 0px; } }
+
+.nike-flex2-spacer4 {
+  flex: 0 1 9px; }
+
+.nike-subtitle.layout2 {
+  position: relative;
+  flex: 0 0 auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 3px 0px 4px; }
+  @media (max-width: 1199px) {
+    .nike-subtitle.layout2 {
+      margin: 5px 0px; } }
