@@ -108,3 +108,14 @@ $font_type0: 50px/1.2 "Allura", Helvetica, Arial, serif;
     }
   }
 }
+{
+/* image 1 */
+
+position: absolute;
+left: 1.41%;
+right: 1.41%;
+top: 16.76%;
+bottom: 33.24%;
+
+background: url(image.png);
+}
