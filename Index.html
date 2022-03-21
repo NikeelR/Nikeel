@@ -12,32 +12,18 @@
   </style>
   <body>
     <div className="container">
-      
-      #image2 {
-background-image: url(image2.png);
-background-attachment: fixed;
-background-repeat: no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-max-width: 100%;
-height: 500px;
-max-height: 50%; 
-}
-
-@media screen and (max-width: 800px) {
-    #image2 {
-        background-image: url(image2.png);
-        width: 100%;
-        height: auto;
-    }
-}
-      
       </center>
       <img src= "./image2.png"/> 
       </centre>
         <img src="./image1.png" class="responsive"/>
+        @media screen and (max-width: 800px)
+  {
+    #"image2.png" {
+        background-image: url(image2.png);
+        width: auto;
+        height: auto;
+    }
+}
   
     </div>
     <script src="script.js"></script>
